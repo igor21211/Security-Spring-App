@@ -2,6 +2,7 @@ package com.hellokoding.auth.web;
 
 import com.hellokoding.auth.model.User;
 import com.hellokoding.auth.service.SecurityService;
+import com.hellokoding.auth.service.Service;
 import com.hellokoding.auth.service.UserService;
 import com.hellokoding.auth.validator.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,8 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
+    private Service service;
     @Autowired
     private SecurityService securityService;
 

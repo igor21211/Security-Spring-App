@@ -42,6 +42,30 @@
                 </div>
             </spring:bind>
 
+            <spring:bind path="country">
+                <div class="form-group ${status.error ? 'has-error' : ''}">
+                    <form:input type="text" path="country" class="form-control"
+                                placeholder="Your Country"></form:input>
+                    <form:errors path="country"></form:errors>
+                </div>
+            </spring:bind>
+
+            <spring:bind path="email">
+                <div class="form-group ${status.error ? 'has-error' : ''}">
+                    <form:input type="email" path="email" class="form-control"
+                                placeholder="Your Email"></form:input>
+                    <form:errors path="email"></form:errors>
+                </div>
+            </spring:bind>
+
+            <spring:bind path="numberOfPhone">
+                <div class="form-group ${status.error ? 'has-error' : ''}">
+                    <form:input type="number" path="numberOfPhone" class="form-control"
+                                placeholder="Your Phone Number"></form:input>
+                    <form:errors path="numberOfPhone"></form:errors>
+                </div>
+            </spring:bind>
+
             <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
         </form:form>
 
